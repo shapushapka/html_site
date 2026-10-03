@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Стартовая страница</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Roboto', Arial, sans-serif;   /* новый шрифт для основного текста */
+            background-color: #f4f8fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-family: 'Montserrat', Arial, sans-serif;  /* новый шрифт для заголовков */
+            text-align: center;
+            color: #008b8b;
+            padding: 20px 10px 0;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            font-family: 'Montserrat', Arial, sans-serif;
+            text-align: center;
+            color: #555;
+            margin-top: 5px;
+            font-weight: 500;
+        }
+
+        nav {
+            background-color: #00FFFF;
+            text-align: center;
+            padding: 12px;
+            margin: 15px 0;
+        }
+
+
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #b0d4d4;
+            padding: 10px 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #00FFFF;
+            color: #003333;
+            text-align: center;
+            font-family: 'Montserrat', Arial, sans-serif;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 90%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        footer {
+            background-color: #00FFFF;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            color: #003333;
+        }
+
+        footer p {
+            margin: 0;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="p0">Личная страница мышка нагиталка</h1>
+    <h3>Навигация по сайту:</h3>
+
+    <nav>
+        <a href="#p0">Начало</a>
+        <a href="#p1">Фото</a>
+        <a href="#p3">Таблица</a>
+        <a href="#p4">Копирайт</a>
+    </nav>
+
+    <table id="p3">
+        <tr>
+            <th colspan="2">Мои достижения</th>
+        </tr>
+        <tr>
+            <td>Год</td>
+            <td>Достижение</td>
+        </tr>
+        <tr>
+            <td>2025</td>
+            <td>Поступил в Мосполитех</td>
+        </tr>
+    </table>
+
+    <img id="p1" src="C:\Users\kolly\Music\jjjjj.png" alt="Моё фото">
+
+    <footer>
+        <p id="p4">Все права принадлежат мне. Личка: @nagitalka</p>
+    </footer>
+</body>
+</html>
