@@ -15,19 +15,9 @@
 
         body {
             margin: 0;
-            font-family: 'Roboto', Arial, sans-serif;   /* новый шрифт для основного текста */
-            background-color: #f4f8fb;
+            font-family: 'Roboto', Arial, sans-serif;   
             color: #222;
             line-height: 1.6;
-        }
-
-        h1 {
-            font-family: 'Montserrat', Arial, sans-serif;  /* новый шрифт для заголовков */
-            text-align: center;
-            color: #008b8b;
-            padding: 20px 10px 0;
-            margin: 0;
-            letter-spacing: 1px;
         }
 
         h3 {
@@ -44,7 +34,6 @@
             padding: 12px;
             margin: 15px 0;
         }
-
 
         table {
             border-collapse: collapse;
@@ -89,6 +78,17 @@
             margin: 0;
             font-weight: 500;
         }
+
+        #forma {
+            border: 2px solid gray;       
+            padding: 20px;                
+            margin: 20px auto;           
+            width: 80%;                  
+            max-width: 600px;             
+            background-color: #f0ffff;   
+            border-radius: 8px;          
+        }
+
     </style>
 </head>
 <body>
@@ -100,6 +100,9 @@
         <a href="#p1">Фото</a>
         <a href="#p3">Таблица</a>
         <a href="#p4">Копирайт</a>
+        <a href="#forma">Форма обратной связи</a>
+        <!-- Исправлен путь к файлу регистрации -->
+        <a href="reg.html">Регистрация</a>
     </nav>
 
     <table id="p3">
@@ -112,11 +115,41 @@
         </tr>
         <tr>
             <td>2025</td>
-            <td>Поступил в Мосполитех</td>
+            <td>Не выгнали</td>
         </tr>
     </table>
 
-    <img id="p1" src="C:\Users\kolly\Music\jjjjj.png" alt="Моё фото">
+    <img id="p1" src="jjjjj.png" alt="Моё фото">
+    
+    <h3><b>Форма обратной связи</b></h3>
+    
+    <form id="forma" action="https://httpbin.org/post" method="POST">
+        <p>Ваше имя
+            <input type="text" name="username" size="40">
+        </p>
+        <p>EMAIL
+            <input type="email" name="useremail" size="40">
+        </p>
+        <p>
+            <b>Откуда о нас узнали?</b><br>
+            <input type="radio" name="source" value="advice">Посоветовали<br>
+            <input type="radio" name="source" value="self">Сам нашел<br>
+            <input type="radio" name="source" value="ad">Увидел рекламу на сайте<br>
+        </p>
+        <p>Что вам нужно?</p>
+        <p>
+            <select name="request_type" size="1">
+                <option value="1">Жалоба</option>
+                <option value="2">Обращение</option>
+            </select>
+        </p>
+        <p>
+            <textarea name="otv" cols="40" rows="3">Текст жалобы/обращения пишите здесь</textarea>
+        </p>
+        <p><input type="file" name="f"></p>
+        <p><input type="checkbox" name="agreement" value="yes">Согласен на обработку персональных данных</p>
+        <p><input type="submit" value="Отправить"></p>
+    </form>
 
     <footer>
         <p id="p4">Все права принадлежат мне. Личка: @nagitalka</p>
